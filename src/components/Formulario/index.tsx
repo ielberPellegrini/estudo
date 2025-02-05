@@ -33,7 +33,7 @@ function Formulario({ setTarefas }: Props) {
     <form className={style.novaTarefa} onSubmit={adicionarTarefa}>
       <div className={style.inputContainer}>
         <label htmlFor="tarefa">
-          Adicione um novo estudo
+          Adicione sua tarefa
         </label>
         <input
           type="text"
@@ -41,7 +41,7 @@ function Formulario({ setTarefas }: Props) {
           id="tarefa"
           value={tarefa}
           onChange={evento => setTarefa(evento.target.value)}
-          placeholder="O que você quer estudar"
+          placeholder="Escreva aqui !"
           required
         />
       </div>
